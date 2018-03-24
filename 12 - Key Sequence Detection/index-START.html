@@ -7,6 +7,17 @@
 </head>
 <body>
 <script>
+  const keyArray = [];
+  const secretCode = 'vinitiet';
+  window.addEventListener('keyup', (e) => {
+    keyArray.push(e.key);
+    keyArray.splice(-secretCode.length - 1, keyArray.length - secretCode.length);
+    if(keyArray.join('').includes(secretCode)){
+      cornify_add();
+    };
+
+  });
+
 </script>
 </body>
 </html>
