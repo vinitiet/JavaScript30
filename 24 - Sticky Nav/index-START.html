@@ -54,6 +54,17 @@
   </div>
 
 <script>
+  const navbar = document.getElementById("main")
+  const topOfNav = navbar.offsetTop;
+  function fixNav() {
+      console.log(window.scrollY, topOfNav);
+    if(window.scrollY >= topOfNav) {
+      document.body.classList.add('fixed-nav');
+    } else {
+      document.body.classList.remove('fixed-nav');
+    }
+  }
+  window.addEventListener('scroll', fixNav)
 
 </script>
 

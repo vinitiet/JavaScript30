@@ -44,8 +44,16 @@ nav {
   top:0;
   width: 100%;
   transition:all 0.5s;
-  position: relative;
+  position: sticky;
   z-index: 1;
+}
+
+.fixed-nav nav {
+  box-shadow: 0 5px rgba(0,0,0,0.1);
+}
+
+.fixed-nav li.logo {
+  max-width: 500px;
 }
 
 nav ul {
